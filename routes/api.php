@@ -17,7 +17,7 @@ Route::get('/companies',        [CompanyController::class, 'index']);
 Route::get('/companies/{id}',   [CompanyController::class, 'show']);
 
 Route::middleware(['auth:sanctum'])->group(function () {
-    Route::apiResource('companies', CompanyController::class);
+    //Route::apiResource('companies', CompanyController::class);
 
 });
 
