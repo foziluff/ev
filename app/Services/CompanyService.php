@@ -3,14 +3,15 @@
 namespace App\Services;
 use App\Interfaces\CompanyRepositoryInterface;
 use App\Models\Company;
-use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Collection;
 
 class CompanyService extends CoreService
 {
     public function __construct(
         readonly private CompanyRepositoryInterface $companyRepository,
-    ){}
+    ){
+        parent::__construct();
+    }
 
     public function getAll(): Collection
     {

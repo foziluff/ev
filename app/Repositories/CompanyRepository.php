@@ -3,7 +3,7 @@
 namespace App\Repositories;
 use App\Models\Company as Model;
 use App\Interfaces\CompanyRepositoryInterface;
-use Illuminate\Contracts\Pagination\LengthAwarePaginator;
+//use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Collection;
 
 class CompanyRepository extends CoreRepository implements CompanyRepositoryInterface

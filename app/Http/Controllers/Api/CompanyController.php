@@ -50,7 +50,7 @@ class CompanyController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(int $id)
+    public function destroy(int $id): JsonResponse
     {
         return $this->companyService->delete($id)
             ? response()->json(['message' => 'Successfully deleted!'])
