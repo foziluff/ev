@@ -54,6 +54,6 @@ class CompanyController extends Controller
     {
         return $this->companyService->delete($id)
             ? response()->json(['message' => 'Successfully deleted!'])
-            : response()->json(['message' => 'Not found'], 404);
+            : response()->json(['message' => 'Not found!'], 404);
     }
 }

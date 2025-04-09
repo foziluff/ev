@@ -24,7 +24,6 @@ class User extends Authenticatable
         'surname',
         'phone',
         'born_in',
-        'password',
         'car_number',
         'gender',
         'role',
@@ -64,5 +63,4 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
-    
 }
